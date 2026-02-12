@@ -55,11 +55,11 @@ export default function HomePageClient({ featuredProducts }: HomePageClientProps
 
       {/* Featured Products */}
       <section className="py-12 md:py-20">
-        <div className="container mx-auto px-2 md:px-6 overflow-x-hidden">
+        <div className="container mx-auto px-0 md:px-6 overflow-x-hidden">
           <h3 className="text-2xl md:text-4xl font-bold text-center mb-8 md:mb-16 text-gray-900">Featured Products</h3>
           {/* Mobile: Vertical Grid Layout */}
           <div className="block md:hidden">
-            <div className="grid grid-cols-1 gap-3 px-1">
+            <div className="grid grid-cols-1 gap-3 px-0">
               {filteredProducts.map((product) => (
                 <div key={product.id} className="flex justify-center">
                   <ProductCard 

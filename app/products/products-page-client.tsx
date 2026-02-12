@@ -44,7 +44,7 @@ export default function ProductsPageClient({ initialProducts }: ProductsPageClie
   return (
     <div className="min-h-screen bg-amber-50 overflow-x-hidden">
       <Header searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
-      <div className="container mx-auto px-2 sm:px-4 py-8 overflow-x-hidden">
+      <div className="container mx-auto px-0 sm:px-4 py-8 overflow-x-hidden">
         <div className="mb-8">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Our Products</h1>
           <p className="text-gray-600">Showing {filteredProducts.length} products</p>
@@ -57,7 +57,7 @@ export default function ProductsPageClient({ initialProducts }: ProductsPageClie
           </div>
         ) : (
           <>
-            <div className="flex flex-wrap gap-3 sm:gap-6 justify-center px-1">
+            <div className="flex flex-wrap gap-3 sm:gap-6 justify-center px-0">
               {filteredProducts.map((product) => (
                 <ProductCard
                   key={product.id}

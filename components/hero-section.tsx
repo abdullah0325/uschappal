@@ -28,7 +28,7 @@ export default function HeroSection() {
   }, [])
 
   return (
-  <section className="relative h-[50vh] sm:h-[60vh] md:h-[70vh] min-h-[400px] sm:min-h-[450px] md:min-h-[470px] max-h-[600px] sm:max-h-[650px] md:max-h-[700px] overflow-hidden">
+  <section className="relative h-[67vh] sm:h-[70vh] md:h-[70vh] min-h-[520px] sm:min-h-[540px] md:min-h-[560px] max-h-[810px] sm:max-h-[820px] md:max-h-[820px] overflow-hidden">
       {/* Background Carousel */}
   <div className="absolute inset-0">
         {heroImages.map((image, index) => (
