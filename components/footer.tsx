@@ -82,6 +82,7 @@
 
 
 import Link from "next/link"
+import { Facebook } from "lucide-react"
 
 export default function Footer() {
   return (
@@ -118,6 +119,32 @@ export default function Footer() {
               <p>📍 Charsadda, Umarzai, Pakistan</p>
               <p>📞 +92 345 9095280</p>
               <p>✉️ uschappal@gmail.com</p>
+            </div>
+            <div className="flex space-x-4 mt-4 text-amber-400">
+              <a
+                href="https://www.facebook.com/profile.php?id=61587401301518&sk=photos"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white transition-colors"
+              >
+                <Facebook size={20} />
+              </a>
+              <a
+                href="https://wa.me/923459095280"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white transition-colors"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M12.04 2C6.49 2 2 6.39 2 11.92c0 2.1.62 4.04 1.7 5.7L2 22l4.5-1.62c1.6.87 3.45 1.37 5.54 1.37 5.55 0 10.04-4.39 10.04-9.92C22.08 6.39 17.59 2 12.04 2zm0 17.92c-1.73 0-3.34-.5-4.69-1.36l-.34-.2-2.67.96.91-2.6-.22-.34c-1.01-1.46-1.6-3.2-1.6-5.04 0-4.43 3.66-8.04 8.2-8.04s8.2 3.61 8.2 8.04c0 4.44-3.66 8.04-8.2 8.04zm4.59-6.06c-.25-.13-1.48-.73-1.71-.81-.23-.08-.4-.13-.57.13-.17.26-.65.81-.8.98-.15.17-.3.2-.55.07-.25-.13-1.05-.39-2-1.25-.74-.66-1.24-1.47-1.39-1.72-.15-.26-.02-.4.11-.53.11-.11.25-.3.38-.45.13-.15.17-.26.25-.43.08-.17.04-.32-.02-.45-.07-.13-.57-1.36-.78-1.86-.2-.48-.4-.42-.57-.43-.15-.01-.32-.01-.49-.01s-.45.06-.68.32c-.23.26-.89.87-.89 2.13 0 1.26.92 2.48 1.05 2.65.13.17 1.8 2.74 4.36 3.85.61.26 1.08.41 1.45.52.61.19 1.17.16 1.61.1.49-.07 1.48-.61 1.69-1.19.21-.57.21-1.05.15-1.15-.06-.1-.23-.16-.48-.29z" />
+                </svg>
+              </a>
             </div>
           </div>
 

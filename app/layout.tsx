@@ -105,7 +105,7 @@ export default function RootLayout({
       "availableLanguage": ["English", "Urdu", "Pashto"]
     },
     "sameAs": [
-      "https://www.facebook.com/share/17JwY8kQjA/",
+      "https://www.facebook.com/profile.php?id=61587401301518&sk=photos",
       "https://wa.me/923459095280"
     ],
     "foundingDate": "2020",

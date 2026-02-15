@@ -4,14 +4,18 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { useEffect, useState } from "react"
 import Image from "next/image"
+import { generateInquiryMessage, getWhatsAppUrl } from "@/lib/whatsapp"
 
 const heroImages = [
-  "/brown-peshawari-chappal-traditional-leather.jpg",
-  "/black-peshawari-chappal-formal-leather.jpg",
-  "/tan-suede-peshawari-chappal-comfortable.jpg",
-  "/premium-leather-chappal-brown.jpg",
-  "/wedding-special-chappal-gold.jpg",
-  "/embroidered-pakistani-chappal.jpg",
+  "/WhatsApp Image 2026-02-13 at 5.26.05 PM.jpeg",
+  "/WhatsApp Image 2026-02-13 at 5.26.05 PM (1).jpeg",
+  "/WhatsApp Image 2026-02-13 at 5.26.05 PM (2).jpeg",
+  "/WhatsApp Image 2026-02-13 at 5.26.03 PM.jpeg",
+  "/WhatsApp Image 2026-02-13 at 5.26.01 PM.jpeg",
+  "/WhatsApp Image 2026-02-13 at 5.25.59 PM.jpeg",
+  "/WhatsApp Image 2026-02-13 at 5.25.52 PM.jpeg",
+  "/WhatsApp Image 2026-02-13 at 5.25.47 PM.jpeg",
+  
 ]
 
 export default function HeroSection() {
@@ -53,10 +57,10 @@ export default function HeroSection() {
       {/* Content */}
       <div className="relative z-10 h-full flex items-center">
   <div className="container mx-auto px-6 md:px-12 lg:px-16 text-center overflow-x-hidden">
-          <h2 className="text-2xl sm:text-3xl md:text-6xl lg:text-7xl font-bold text-white mb-4 md:mb-6 text-balance drop-shadow-lg">
+          <h2 className="text-2xl sm:text-3xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-4 md:mb-6 text-balance drop-shadow-lg">
             Premium Handcrafted Chappals
           </h2>
-          <p className="text-sm sm:text-base md:text-xl lg:text-2xl text-white/90 mb-6 md:mb-8 max-w-3xl mx-auto text-pretty drop-shadow-md">
+          <p className="text-sm sm:text-base md:text-xl lg:text-2xl text-gray-800 mb-6 md:mb-8 max-w-3xl mx-auto text-pretty drop-shadow-md">
             Discover our collection of traditional Peshawari chappals. Each piece crafted with heritage and premium materials.
           </p>
           <div className="flex flex-row gap-4 justify-center">
@@ -69,10 +73,11 @@ export default function HeroSection() {
             </Button>
             <Button 
               size="lg" 
-              className="bg-white text-amber-800 border-amber-300 hover:bg-amber-100 hover:text-amber-900 shadow-lg hover:shadow-xl transition-all duration-300" 
-              asChild
+              className="bg-[#25D366] hover:bg-[#20BD5C] text-white shadow-lg hover:shadow-xl transition-all duration-300" 
             >
-              <Link href="/about">Learn More</Link>
+              <a href={getWhatsAppUrl(generateInquiryMessage())} target="_blank" rel="noopener noreferrer">
+                WhatsApp
+              </a>
             </Button>
           </div>
         </div>

@@ -135,7 +135,7 @@ export default function HomePageClient({ featuredProducts }: HomePageClientProps
             </div>
             <div className="aspect-square bg-gray-100 rounded-lg overflow-hidden">
               <img
-                src="/brown-peshawari-chappal-traditional-leather.jpg"
+                src="/WhatsApp Image 2026-02-13 at 5.26.05 PM (2).jpeg"
                 alt="Classic Brown Peshawari Chappal"
                 className="w-full h-full object-cover"
               />
